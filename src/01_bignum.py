@@ -2,3 +2,6 @@
 # (try doing the same thing in the JS console and see what it outputs)
 
 # YOUR CODE HERE
+print(2 ** 65536)
+
+# In javascript, we get "infinity" if I run this (even if I use math.pow instead of "**"). The highest power of 2 that i could log was 1023
