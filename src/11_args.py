@@ -52,9 +52,14 @@ print(f3(8))     # Should print 9
 #
 # Note: Google "python keyword arguments".
 
+# THIS NEEDED A KWARG, NOT AN ARG (LIKE THE ONE ABOVE)
+
 # YOUR CODE HERE
-def f4(*another):
-    print(another)
+def f4(**another):
+    x = another
+    # print(x)
+    for key, value in another.items():
+        print("key: %s, value: %s" % (key, value))
 
 # Should print
 # key: a, value: 12
@@ -73,4 +78,4 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+f4(**d)
