@@ -10,6 +10,17 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+# def wecandothis():
+#     txt_file = open("foo.txt", "r")
+#     foo = txt_file.read()
+#     print(foo)
+#     txt_file.close()
+
+# wecandothis()   
+
+with open('foo.txt', "r") as r:
+    print(r.read())
+
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -17,3 +28,5 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+with open('bar.txt', "w") as writer: 
+    writer.write('here is line one \nHow about line 2 \nand now for line 3')
